@@ -246,7 +246,7 @@ export default class Gallery extends Component {
         const loaded = this.state.imagesLoaded[pageId] && this.state.imagesLoaded[pageId] === true;
         const loadingView = !loaded && loader ? loader : false;
         return (
-            <Image
+            <CachedImage
               {...other}
               onLoad={() => this.setImageLoaded(pageId)}
               onViewTransformed={((transform) => {
@@ -262,7 +262,7 @@ export default class Gallery extends Component {
               pixels={pageData.dimensions || {}}
             >
                 { loadingView }
-            </Image>
+            </CachedImage>
         );
     }
 
