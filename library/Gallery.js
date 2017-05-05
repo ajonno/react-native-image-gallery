@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import {createResponder} from 'react-native-gesture-responder';
 import Image from 'react-native-transformable-image';
 import ViewPager from '@ldn0x7dc/react-native-view-pager';
+import { CachedImage } from "react-native-img-cache";
 
 export default class Gallery extends Component {
 
